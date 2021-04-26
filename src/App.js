@@ -1,31 +1,38 @@
+
 import {
-  db,
-  googleAuthProvider,
-  firebase
-} from './config/firebase';
-import Button from './components/Button';
+db,
+googleAuthProvider,
+firebase
+  } from './config/firebase';
+  import Button from './components/Button';
+  
 
 function App(){
-  const signInWithGoogle = async () => {
 
-    // Coloca el lenguaje de preferencia del dispositivo
-    firebase.auth() .useDeviceLanguage();
+const signInWithGoogle = async () => {
 
-    //Inicio el procedo de login dentro de un try ... cath
-    try{
-      await firebase.auth().signInWithPopup(googleAuthProvider);
+  firebase.auth().useDeviceLanguage();
 
-    } catch (e) {
-      console.error(e.message)
-    }
-  };
+try {
+await firebase.auth().signInWithPopup(googleAuthProvider);
 
-//Renderizar el Componente Button
+} catch (e) {
+console.error(e.message);
+
+
+
+}
+
+
+};
+
+
 return (
-<div>
-  <Button onClick={signInWithGoogle} > Sing in with Google</Button>
-</div>
-);
 
+<div>
+<Button onClick={signInWithGoogle} >Sing in with Google </Button>
+</div>
+
+ );
 }
 export default App;
