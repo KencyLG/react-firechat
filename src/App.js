@@ -1,10 +1,9 @@
-
 import {
   db,
   googleAuthProvider,
   firebase
-  } from './config/firebase';
-  import Button from './components/Button';
+} from './config/firebase';
+import Button from './components/Button';
 
 function App(){
   const signInWithGoogle = async () => {
@@ -20,8 +19,9 @@ function App(){
       console.error(e.message)
     }
   };
-return (
 
+//Renderizar el Componente Button
+return (
 <div>
   <Button onClick={signInWithGoogle} > Sing in with Google</Button>
 </div>
