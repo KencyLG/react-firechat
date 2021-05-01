@@ -1,5 +1,5 @@
 
-import Button from './components';
+import Button from './components/Button';
 import {signInWithGoogle, signOut} from './login';
 import {useAuthState} from './hooks'
 import { firebase } from './config/firebase';
@@ -33,7 +33,7 @@ import { firebase } from './config/firebase';
             
             <h4 class="ben">Bienvenidos al Chat!</h4>
             <hr></hr>
-            <Channel user={user}/>
+
             <br></br><br></br><br></br>
             </div>
             </center>
