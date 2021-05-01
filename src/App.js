@@ -25,7 +25,6 @@ import { firebase } from './config/firebase';
             
             <center>
             
-           
             <header><h4>Firechat-MaximeGroup</h4><Button onClick={signOut}> Logout Google</Button></header>
             <br></br><br></br><br></br>
             <div class="contenedor">
