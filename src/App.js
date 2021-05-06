@@ -31,6 +31,7 @@ import { firebase } from './config/firebase';
             <br></br><br></br><br></br>
             
             <h4 class="ben">Bienvenidos al Chat!</h4>
+            <Channel user={user}/>
             <hr></hr>
 
             <br></br><br></br><br></br>
