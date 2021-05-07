@@ -3,7 +3,7 @@ import Button from './components/Button';
 import {signInWithGoogle, signOut} from './login';
 import {useAuthState} from './hooks'
 import { firebase } from './config/firebase';
-  
+  import Channel from './components/Channel';
 
   function App(){
     const {user, initializing} = useAuthState(firebase.auth());

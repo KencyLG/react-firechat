@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
 import { db, firebase } from '../config/firebase';
-import Message from './Message';
 import '../style/style.css';
 
 
@@ -33,10 +32,7 @@ const Channel = ({ user = null }) => {
     }, [])
     return (
         <ul>
-            {messages.map(message => (
-                
-                <li key={message.id} >{message.text}</li>
-            ))}
+         
         </ul>
     );
 };
