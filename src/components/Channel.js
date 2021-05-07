@@ -32,7 +32,10 @@ const Channel = ({ user = null }) => {
     }, [])
     return (
         <ul>
-         
+            {messages.map(message => (
+                
+                <li key={message.id} >{message.text}</li>
+            ))}
         </ul>
     );
 };
