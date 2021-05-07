@@ -39,4 +39,4 @@ const Channel = ({ user = null }) => {
         </ul>
     );
 };
-export default Channel 
+export default Channel; 
