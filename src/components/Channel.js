@@ -104,4 +104,4 @@ const Channel = ({ user = null }) => {
     );
 };
 
-export default Channel;
+export default Channel
