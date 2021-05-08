@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { db, firebase } from '../config/firebase';
+import Message from './Message';
 import '../style/style.css';
 
 
@@ -30,13 +31,77 @@ const Channel = ({ user = null }) => {
         return unsubscribe;
 
     }, [])
+
+
+    //Codigo para agregar nuevos mensajes
+    const { uid, displayName, photoURL } = user;
+    const [newMessage, setNewMessage] = useState('');
+
+    const handleMessageOnChange = (e) => {
+        e.preventDefault();
+        setNewMessage(e.target.value);
+    }
+
+
+    const messagesRef = db.collection('messages');
+
+
+    const handleOnSubmit = e => {
+        e.preventDefault();
+
+        const trimmedMessage = newMessage.trim();
+        if (trimmedMessage) {
+            // Add new message in Firestore
+            messagesRef.add({
+                text: trimmedMessage,
+                createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+                uid,
+                displayName,
+                photoURL,
+            });
+            // Clear input field
+            setNewMessage('');
+        }
+    };
+
+    const inputRef = useRef();
+    useEffect(() => {
+        if (inputRef.current) {
+            inputRef.current.focus();
+        }
+    }, [inputRef]);
+
+
     return (
-        <ul>
-            {messages.map(message => (
-                
-                <li key={message.id} >{message.text}</li>
-            ))}
-        </ul>
+        <>
+            <ul>
+                {messages.map(message => (
+                    <li key={message.id}>
+                        <Message {...message} />
+                    </li>
+                ))}
+            </ul>
+
+            <form 
+                onSubmit={handleOnSubmit}>
+                <input
+                    ref={inputRef}
+                    type="text"
+                    value={newMessage}
+                    onChange={handleMessageOnChange}
+                    placeholder="Escribe tu mensaje aqui..."
+                />
+
+                <button
+                    class=" enviar"
+                    type="submit"
+                    disabled={!newMessage}
+                >
+                    Enviar
+        </button>
+            </form>
+        </>
     );
 };
-export default Channel; 
+
+export default Channel;
