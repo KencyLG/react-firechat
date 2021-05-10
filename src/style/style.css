@@ -1,102 +1,95 @@
-body{
-    background-color: blanchedalmond;
-  }
+
+input[type=text]{
+  position: fixed;
+  left: 60px;
+  top: 550px;
+  width:55%;
+  height: 50px;
+  border:2px solid #ffa31a;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+  unicode-bidi: bidi-override;
   
-  
-  input[type=text]{
-      position: absolute;
-      left: 100px;
-      top: 600px;
-      width:35%;
-      height: 50px;
-      border:2px solid #aaa;
-      border-radius:4px;
-      margin:8px 0;
-      outline:none;
-      padding:8px;
-      box-sizing:border-box;
-      transition:.3s;
-      unicode-bidi: bidi-override;
-      
-    }
+}
+    
     
     input[type=text]:focus{
-      border-color:dodgerBlue;
-      box-shadow:0 0 8px 0 dodgerBlue;
+      border-color:#ffa31a;
+      box-shadow:0 0 8px 0 #ffa31a;
     }
       .enviar{
         width: 80px;
-          height: 45px;
-          position: absolute;
-          top: 613px;
-          left: 579px;
-          text-decoration: none;
-          padding: 10px;
-          font-weight: 600;
-          font-size: 15px;
-          color: #ffffff;
-          background-color: #1883ba;
+      height: 45px;
+      position: fixed;
+      top: 560px;
+      left: 720px;
+      text-decoration: none;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 15px;
+          background-color: #ffa31a;
           border-radius: 6px;
-          border: 2px solid #0016b0;
+          border: 2px solid #ffa31a;
+          color: #000000;
       }
       
       li{
-          color:rgb(0, 0, 0) ;
+          
           list-style-type:none;
       }
       
       .contenedor{
-          width: 100%;
-          max-width: 1235px;
-          margin: auto;
-          margin-top: 100px;
-          background: white;
-          padding: 15px;
-          height: 400px;
-          overflow: auto;
-          border-radius: 7px;
+        width: 90%;
+        max-width: 1235px;
+        margin: auto;
+        margin-top: 100px;
+        background: #292929;
+        padding: 15px;
+        height: 500px;
+        overflow: auto;
+        border-radius: 25px;
+        position: relative;
+        top: -60px;
           
       }
       .text{
         position: relative;
-        left: -30px;
+        left: 10px;
       }
       .ben{
-        color: black;
+        color: #ffff;
         position: relative;
-        left: -30px;
+        left: -10px;
       }
       
       img{
         width: 60px;
         height: 44px;
-        border-radius: 22px;
         color: white;
         text-align: center;
-        background-repeat: no-repeat;
+       
         background-position: center;
         background-size: 48px;
+        position: relative;
+        top: 10px;
+        border-radius: 50%
       }
   
-      body {
-          background-color: white;
-        }
         
         
           p{
-              color: black;
+              color: white;
           }
-        
-        
-        
-        
-        
         
         
         form button {
          
           width: 20%;
-          background-color: rgb(56, 56, 143);
+          background-color: #ffa31a;
         }
         
         button{
@@ -110,22 +103,22 @@ body{
         
         
         .sign-in {
-          color: #282c34;
-          background: white;
+          color: #ffffff;
+          background: #1b1b1b;
           max-width: 400px;
           margin: 0 auto;
         }
         /*contenedor de los mensajes */
         .todo{
-          background-color: white;
-          height: 100px;
+          background-color:#292929;
+          height: 110px;
           padding: 0px;
         }
         .hola{
           position: relative;
           top: -110px;
           left: -80px;
-          color: black;
+          color:white;
   
         }
         
@@ -161,12 +154,6 @@ body{
           
         }
         
-        
-        
-        
-        
-        
-        
         img {
           
           width: 40px;
@@ -179,15 +166,15 @@ body{
         top: 5px;
         display: block;
         height: 60px;
-        width: 240px;
+        width: 260px;
         border-radius: 4px;
         text-transform: uppercase;
-        background-color: transparent;
-        color: black;
+        background-color: rgb(24, 24, 24);
+        color:white;
         font-size: 18px;
         overflow: hidden;
         transition: all 500ms ease;
-        border: 2px solid #20e2d7;
+        border: 2px solid #ffa31a;
         margin-bottom: 40px;
         z-index: 0;
         font-weight: 700;
@@ -208,12 +195,12 @@ body{
       }
   
       header{
-        background: #fff ;
+        background:#1b1b1b ;
         
         width: 100%;
         height: 70px;
         position: fixed;
-        box-shadow: 0px 0px 10px black;
+        box-shadow: 0px 0px 10px #ffa31a;
         
         
       }
@@ -221,15 +208,21 @@ body{
         position: absolute;
         top: -18px;
         left: 80px;
-        color: red;
-        font-family: fantasyS;
+        color:#ffa31a;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 28px;
         }
         .f{
           position: relative;
           left: 500px;
           top: 80px;
-          color:red;
+          color:#ffa31a;
           width: 20px;
           height: 10px;
+        }
+        body{
+
+background-color: #000000;
+
+
         }
