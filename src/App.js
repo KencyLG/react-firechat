@@ -11,7 +11,7 @@ import { firebase } from './config/firebase';
     const renderLoading = ()=> {
       if (initializing){
         return <div>
-          <h1>Loading ...</h1>
+          <h1>Cargando...</h1>
         </div>
       }
     }
