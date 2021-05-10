@@ -1,9 +1,8 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders Sign in with Gogle', async () => {
-  
+test('renders learn react link', () => {
   render(<App />);
-  const linkElement = await waitFor (() =>screen.getByText(/Sign in with Google/i));
+  const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });

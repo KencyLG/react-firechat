@@ -41,7 +41,14 @@ import { firebase } from './config/firebase';
             
             </>
             
-            ):<div class="inicio"><Button onClick={signInWithGoogle} > Sign in with Google</Button></div>
+            ):<div class="inicio">
+               <h1>😎 React FireChat😎</h1>
+               <h3>👨‍👨‍👦‍👦React Firechat Disponibles para todos👨‍👨‍👦‍👦 </h3>
+               <h3>Inicia Con Google Para acceder al chat! </h3>
+              <Button onClick={signInWithGoogle} > Sign in with Google</Button>
+              
+              
+              </div>
             
           }
           <br></br>

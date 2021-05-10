@@ -26,7 +26,7 @@ const Message = ({
     
     return (// devuelve los mensajes con el nombre de del usuario y imagen del perfil.
         <div class="todo">
-            <button class="f">...</button>
+            
             {photoURL ? (// imagen del perfil
                 <img
                     src={photoURL}
