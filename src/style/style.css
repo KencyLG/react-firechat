@@ -32,7 +32,7 @@ input[type=text]{
       font-weight: 600;
       font-size: 15px;
           background-color: #ffa31a;
-          border-radius: 6px;
+          border-radius: 10px;
           border: 2px solid #ffa31a;
           color: #000000;
       }
