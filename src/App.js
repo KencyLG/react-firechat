@@ -41,7 +41,7 @@ import { firebase } from './config/firebase';
             
             </>
             
-            ):<Button onClick={signInWithGoogle} > Sign in with Google</Button>
+            ):<div class="inicio"><Button onClick={signInWithGoogle} > Sign in with Google</Button></div>
             
           }
           <br></br>
